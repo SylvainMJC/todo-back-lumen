@@ -20,3 +20,5 @@ $router->get('/', function () use ($router) {
 $router->get('/greetings', function () use ($router) {
     return response()->json(['message' => 'Hello world']);
 });
+
+$router->get('/todo-list', "ToDoListController@index");
